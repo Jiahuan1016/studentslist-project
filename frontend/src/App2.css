@@ -1,0 +1,131 @@
+/* App2.css */
+
+/* 页面背景：蓝紫色渐变 + 背景图 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 标题 + emoji logo */
+h1 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1::before {
+  content: "🎓 ";
+  margin-right: 10px;
+}
+
+/* 容器：半透明白 + 阴影 + 圆角 */
+.container {
+  max-width: 720px;
+  margin: 50px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* 输入区布局 */
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* 输入框美化 */
+input, select {
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid #1e3c72;
+  font-weight: 600;
+  min-width: 160px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2a5298;
+  box-shadow: 0 0 10px #2a529899;
+}
+
+/* 美化按钮 */
+button {
+  background: linear-gradient(135deg, #4f93ce, #28527a);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(46, 91, 173, 0.5);
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #28527a, #4f93ce);
+  box-shadow: 0 8px 24px rgba(30, 60, 114, 0.8);
+}
+
+/* 学生列表样式 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  background-color: #f0f8ff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #dceeff;
+}
+
+/* 删除按钮微调 */
+li button {
+  background: linear-gradient(135deg, #d72638, #a4133c);
+  font-size: 14px;
+  padding: 8px 14px;
+}
+
+li button:hover {
+  background: linear-gradient(135deg, #a4133c, #d72638);
+}
+
+/* 错误提示 */
+.error {
+  color: #cc0000;
+  font-weight: 700;
+  margin-top: 15px;
+}
