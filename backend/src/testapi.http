@@ -1,0 +1,8 @@
+POST http://localhost:8081/api/v1/student
+Content-Type: application/json
+
+{
+  "name": "Bilal",
+  "email": "bilal.admed@gmail.com",
+  "dob":"1995-12-17"
+}
