@@ -40,12 +40,6 @@ studentslist-project/
 
 ---
 
-## 💼 Purpose
-
-This repository is created to **showcase a complete full-stack project** in a single place. It is suitable for portfolio demonstration, job applications, or learning reference.
-
----
-
 ## 📎 Related Repositories
 
 > This project integrates two separately deployed GitHub repositories:
